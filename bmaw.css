@@ -132,7 +132,7 @@ background-color:rgba(245, 239, 231, 0.4);
 
 #sidebar, #sidebar2 {
   width: 20%;
-  min-height: 100vh;
+  align-self: stretch;
   padding: 1em;
   background-color: rgba(233, 229, 229, 0.4);
   transition: background-color 0.5s ease, opacity 0.5s ease;
@@ -162,4 +162,81 @@ main {
   flex: 1;
   padding: 1em 2em;
   text-align: center;
+  min-height:min-content;
+}
+
+#sidebar {
+  border-right: 1px solid rgba(0, 0, 0, 0.08);
+}
+#sidebar2 {
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+
+#busuf{
+   font-family: "Bebas Neue", "Oswald", sans-serif;
+    color: black;
+    font-size: 1.5em;
+    text-align: left;
+    
+}
+
+ol, li{
+    text-align: left;
+}
+
+h4{
+    font-family: "Bebas Neue", "Oswald", sans-serif;
+    color: black;
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration:underline;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+
+#busuf-cont p{
+    text-align:left;
+    line-height: 1.3;
+    font-size: 0.85em;
+}
+
+.specialties, .breakfast, .drink, .deals{
+    background-color: rgba(188, 191, 231, 0.8);
+    height: auto; 
+    min-height: 0;
+    width:fit-content;
+    padding: 0.5em;
+    border: 2px solid #111111;
+  box-shadow: 4px 4px 0px #111111;
+  border-radius: 2px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  flex:1;
+}
+
+#busuf-cont{
+    display:flex;
+    
+}
+
+#busuf-menu-wrapper {
+  display: flex;
+  gap: 1.5em;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-bottom: 2em;
+  flex-wrap: nowrap;
+}
+.specialties:hover, .breakfast:hover, .drink:hover, .deals:hover{
+    transform: translateY(-3px);
+  box-shadow: 6px 6px 0px #111111;
+}
+
+
+.line {
+    width: 0.5em;
+    background-color: #111111;
+    align-self: stretch;
+    flex-shrink: 0;
 }
