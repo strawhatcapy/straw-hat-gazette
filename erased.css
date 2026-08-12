@@ -1,0 +1,256 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+margin: 0;
+background-color:rgba(245, 239, 231, 0.4);
+}   
+
+
+#header-img {
+  width: 100%;
+  max-height: 10em;
+  object-fit: cover;
+  opacity: 0.75;
+}
+
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;           
+    left: 0;
+    width: 100%;
+    background-color: #f5efe7;
+    border: 1px solid #111111;
+    box-shadow: 4px 4px 0px #111111;
+    z-index: 1000;
+    margin-top: 4px;
+    box-sizing: border-box;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.6em 1em;
+    color: black;
+    text-decoration: none;
+    font-family: "Playfair Display", "Inter", sans-serif;
+    font-size: 0.9em;
+    text-align: left;
+}
+
+.dropdown-menu a:hover {
+    background-color: rgba(228, 212, 206, 0.8);
+}
+
+#search-container:focus-within .dropdown-menu,
+.dropdown-menu:hover {
+    display: block;
+}
+
+#search-container:focus-within .dropdown-menu {
+    display: block;
+}
+
+#search-bar {
+    display: inline-block;
+    position: relative;
+    left: 2em;
+    margin-top: 1em;
+}
+
+
+#search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5em;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(156, 156, 156, 0.1);
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: rgba(245, 239, 231, 0.4);
+    position: relative;   
+    overflow: visible;   
+}
+
+#search-container:focus-within {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px #111111;
+}
+
+#search-container input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 0.5em;
+    font-size: 1em;
+    width: 200px;
+}
+
+#search-container button {
+    background-color: #111111;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#search-container button:hover {
+    background-color: #333333;
+    transform: translateY(-2px);
+}
+
+#search-container:active{
+    cursor: pointer;
+}
+
+.title-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+#main-title{
+    font-family: "Bebas Neue", "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    color: black;
+    font-size: 5em;
+    text-align: center;
+    position: relative;
+    margin:none;
+    padding:0em;
+}
+
+#sidebar, #sidebar2 {
+  width: 20%;
+  align-self: stretch;
+  padding: 1em;
+  background-color: rgba(233, 229, 229, 0.4);
+  transition: background-color 0.5s ease, opacity 0.5s ease;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+
+h2{
+    font-family: "Bebas Neue", "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: black;
+    font-size: 2em;
+    text-align: center;
+    flex:1;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-start;
+}
+
+main {
+  flex: 1;
+  padding: 1em 2em;
+  text-align: center;
+}
+
+p:not(#rate), 
+ul:not(#rate), 
+li:not(#rate) {
+    text-align: left;
+    font-family: "Playfair Display", "Inter", sans-serif;
+    color: black;
+    font-size: 1em;
+    text-align: left;
+}
+
+.satoru-truck {
+    float: left;
+    margin-right: 5em;
+}
+
+h3, .powers {
+    font-family: "Bebas Neue", "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 350;
+    color: black;
+    font-size: 1.5em;
+    text-align: left;
+    flex:1;
+    padding: 0em;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 2em;
+    margin-top: 0.5em;
+}
+
+.review-by {
+    font-family: "Playfair Display", "Inter", sans-serif;
+    color: black;
+    font-size: 1em;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+.think, .kayo{
+    font-family: "Bebas Neue", "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 350;
+    color: black;
+    font-size: 1.5em;
+    text-align: center;
+    flex:1;
+    padding: 0em;
+}
+
+.ratebox{
+    display:flex;
+}
+
+.star-rating {
+    display: flex;
+}
+
+p {
+  line-height: 1.6;
+}
+
+#sidebar {
+  border-right: 1px solid rgba(0, 0, 0, 0.08);
+}
+#sidebar2 {
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.css-star {
+  width: 25px;
+  height: 25px;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.yellow-grey{
+    background: linear-gradient(to right,#ffc107 17%, #333333 17%);
+}
+
+.yellow{
+    background-color: #ffc107;
+}
+
+.grey{
+    background-color: #333333;
+}
+
+#rate{
+    font-family: "Oswald","Bebas Neue", sans-serif;
+}

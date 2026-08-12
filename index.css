@@ -1,0 +1,233 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+margin: 0;
+background-color:rgba(245, 239, 231, 0.4);
+}   
+
+#header-img{
+    width: 100%;
+    height: 100%;
+    max-height:10em;
+    object-fit: cover;
+    opacity:calc(0.75);
+}
+
+p{
+    font-family: "Playfair Display", "Inter", sans-serif;
+    color: black
+}
+
+.title-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+#main-title{
+    font-family: "Bebas Neue", "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    color: black;
+    font-size: 5em;
+    text-align: center;
+    position: relative;
+    margin:none;
+    padding:0em;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+
+main {
+    flex: 1; 
+    min-width: 0; 
+}
+
+#sidebar {
+    width: 20%;
+    min-height: 100vh;
+    padding: 1em;
+    background-color: rgba(233, 229, 229, 0.4);
+    transition: background-color 0.5s ease, opacity 0.5s ease;
+    box-sizing: border-box;
+    flex-shrink: 0;
+
+}
+
+#sidebar:hover{
+    background-color: rgba(228, 212, 206, 0.8);
+}
+
+h2{
+    font-family: "Bebas Neue", "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: black;
+    font-size: 2em;
+    position: relative;
+    left: 2em;
+}
+
+.anime-img-container{
+    padding: 1em;
+    display: flex;
+    filter: grayscale(100%);
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    transition: 0.5s ease;
+    overflow-x: auto;
+    width: 75%;
+    max-height: 100%;
+}
+
+.anime-img{
+    scroll-behavior: smooth;
+    display: flex;
+    flex-shrink: 0;
+    width: 75%;
+}
+
+.anime-img-container:hover{
+    filter: grayscale(0%);
+}
+
+#anime-reviews{
+    min-height: 100vh;
+    padding: 1em;
+    background-color: rgba(245, 239, 231, 0.4);
+    transition: background-color 0.5s ease, opacity 1s ease;
+    width: 100%;
+}
+
+.anime-review-blurb{
+    font-family: "Playfair Display", "Inter", sans-serif;
+    color: black;
+    font-size: 1em;
+    text-align: left;
+    text-decoration: underline;
+    margin-top: 0.5em;
+    position: relative;
+    left: 4em;
+}
+
+figcaption{
+    font-family: "Playfair Display", "Inter", sans-serif;
+    color: black;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+figure{
+    flex-shrink: 0;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;           
+    left: 0;
+    width: 100%;
+    background-color: #f5efe7;
+    border: 1px solid #111111;
+    box-shadow: 4px 4px 0px #111111;
+    z-index: 1000;
+    margin-top: 4px;
+    box-sizing: border-box;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.6em 1em;
+    color: black;
+    text-decoration: none;
+    font-family: "Playfair Display", "Inter", sans-serif;
+    font-size: 0.9em;
+    text-align: left;
+}
+
+.dropdown-menu a:hover {
+    background-color: rgba(228, 212, 206, 0.8);
+}
+
+#search-container:focus-within .dropdown-menu,
+.dropdown-menu:hover {
+    display: block;
+}
+
+#search-container:focus-within .dropdown-menu {
+    display: block;
+}
+
+#search-bar {
+    display: inline-block;
+    position: relative;
+    left: 2em;
+    margin-top: 1em;
+}
+
+
+#search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5em;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(156, 156, 156, 0.1);
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: rgba(245, 239, 231, 0.4);
+    position: relative;   
+    overflow: visible;   
+}
+
+#search-container:focus-within {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px #111111;
+}
+
+#search-container input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 0.5em;
+    font-size: 1em;
+    width: 200px;
+}
+
+#search-container button {
+    background-color: #111111;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#search-container button:hover {
+    background-color: #333333;
+    transform: translateY(-2px);
+}
+
+#search-container:active{
+    cursor: pointer;
+}
+
+#bmaw{
+        padding: 1em;
+    background-color: rgba(245, 239, 231, 0.4);
+    transition: background-color 0.5s ease, opacity 1s ease;
+    width: 100%;
+}
