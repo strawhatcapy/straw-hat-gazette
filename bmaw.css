@@ -173,7 +173,7 @@ main {
 }
 
 
-#busuf{
+#busuf, h3{
    font-family: "Bebas Neue", "Oswald", sans-serif;
     color: black;
     font-size: 1.5em;
@@ -240,4 +240,35 @@ h4{
     background-color: #111111;
     align-self: stretch;
     flex-shrink: 0;
+}
+
+#chicken{
+    text-align: left;
+    line-height:1.2em;
+    font-size: 0.85em;
+    font-family: "Playfair Display", "Inter", sans-serif;
+}
+
+#chicken-fence{
+    display:column;
+    background-color: rgba(188, 191, 231, 0.8);
+    border: 2px solid #111111;
+  box-shadow: 4px 4px 0px #111111;
+  border-radius: 2px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+      max-width:12vw;
+      padding:2em;
+}
+
+#chicken-fence:hover{
+    transform: translateY(-3px);
+    box-shadow: 6px 6px 0px #111111;   
+}
+
+#chicken-fence p:not(#chicken){
+    text-align: center;
+    line-height:1.2em;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    font-family: "Bebas Neue", "Oswald", sans-serif;
 }
